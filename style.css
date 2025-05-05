@@ -1,0 +1,68 @@
+/*sp向けレイアウト（画面幅最大　767px）*/
+@media screen and (max-width: 767px) {
+  body{
+    min-width: 375px;
+    margin: 0;
+  }
+
+/* PC用ナビを隠す */
+#nav-pc{
+    display: none;
+  }
+
+/* SPメニュー全体 */
+#nav-sp{
+  background-color: #ce933e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+
+#nav-sp ul{
+  padding-left: 0;
+}
+
+#nav-sp li{
+  list-style: none;
+}
+
+/* 閉じるボタン */
+#close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* ナビゲーションメニュー用ロゴ */
+#logo-sp{
+  margin: 80px 0 30px 20px;
+}
+
+/* リンク共通 */
+#nav-sp a{
+  display: block;
+}
+#nav-sp a:link,
+#nav-sp a:visited,
+#nav-sp a:hover,
+#nav-sp a:active{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* メニュー項目 */
+#nav-sp.menu{
+  text-decoration: none;
+  display: block;
+  margin: 0 20px 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url("imges/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+}
